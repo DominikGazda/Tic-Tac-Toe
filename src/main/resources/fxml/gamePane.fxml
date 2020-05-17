@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="650.0" prefWidth="600.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gazda.controller.GamePaneController">
+    <children>
+        <VBox layoutX="177.0" layoutY="60.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <TextField fx:id="playerTextField" alignment="CENTER" editable="false" focusTraversable="false" prefHeight="50.0" text="Błąd ! Zrestartuj grę" VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font name="Comic Sans MS" size="22.0" />
+                    </font>
+                </TextField>
+                <GridPane fx:id="boardGridPane" maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+               <children>
+                  <Button fx:id="button00Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="183.0" mnemonicParsing="false" textFill="TRANSPARENT" />
+                  <Button fx:id="button01Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="183.0" mnemonicParsing="false" textFill="TRANSPARENT" GridPane.columnIndex="1" />
+                  <Button fx:id="button02Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="183.0" mnemonicParsing="false" textAlignment="CENTER" textFill="TRANSPARENT" GridPane.columnIndex="2" />
+                  <Button fx:id="button10Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="183.0" mnemonicParsing="false" textFill="TRANSPARENT" GridPane.rowIndex="1" />
+                  <Button fx:id="button11Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="183.0" mnemonicParsing="false" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="button12Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="183.0" mnemonicParsing="false" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button fx:id="button20Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="183.0" mnemonicParsing="false" textFill="TRANSPARENT" GridPane.rowIndex="2" />
+                  <Button fx:id="button21Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="183.0" mnemonicParsing="false" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="button22Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="183.0" mnemonicParsing="false" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+                </GridPane>
+            <TextField fx:id="errorTextField" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+#cross{
+    -fx-background-image: url("../pictures/cross.png");
+}
+#circle{
+    -fx-background-image: url("../pictures/circle.png");
+}
+#circleGame{
+    -fx-background-image: url("../pictures/gameCircle.png");
+}
+#crossGame{
+    -fx-background-image: url("../pictures/gameCross.png");
+}
+.button:hover{
+    -fx-border-color: red;
+}
